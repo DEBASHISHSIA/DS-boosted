@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int money;
+    cout << "Enter the amount " << endl;
+    cin >> money;
+
+    int op = 1;
+
+    switch (op)
+    {
+    case 1:
+        cout << money / 100 << " 100 wala notes" << endl;
+        money = money % 100;
+    case 2:
+        cout << money / 50 << " 50 wala notes" << endl;
+        money = money % 50;
+    case 3:
+        cout << money / 20 << " 20 wala notes" << endl;
+        money = money % 20;
+    case 4:
+        cout << money / 1 << " 1 wala notes" << endl;
+        money = money % 1;
+    }
+    return 0;
+}
